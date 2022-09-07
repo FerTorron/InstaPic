@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); /*font-family: 'Fredoka One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800;900&display=swap'); /*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,900;1,200;1,300;1,400&display=swap'); /*font-family: 'Nunito', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap'); /*font-family: 'Lato', sans-serif;*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	background: #fbfaf9;
+}
+
+
+/* ------ HEADER ------ */
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* ------ END HEADER ------ */
+
+/* ------ HEAD ------ */
+.container_head{
+	width: 100%;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #F6F2EF;
+}
+
+.container_head ul{
+	list-style: none;
+	margin: 0 80px;
+	display: flex;
+}
+.container_head ul li.text{
+	padding: 0 20px;
+}
+.container_head ul li.icons{
+	padding: 0 8px;
+}
+.container_head a{
+	color: #88736f;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+}
+.container_head i{
+	font-size: 15px;
+}
+
+/* ------ END HEAD ------ */
+
+/* ------ INSTAPIC ------ */
+.container_logo{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+.container_logo img{
+	width: 350px;
+}
+
+/* ------ END INSTAPIC ------ */
+
+header hr{
+	width: 100%;
+	background: url('../img/divisor.png');
+	border: none;
+	height: 1px;
+}
+
+/* ------ NAV ------ */
+.container_nav{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+
+.container_nav nav{
+	display: flex;
+}
+.container_nav nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container_nav nav ul li{
+	padding: 0 20px;
+}
+.container_nav nav ul li a{
+	color: #88736f;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	transition: all 300ms;
+}
+.container_nav nav ul li a:hover{
+	color: #F5E8DE;
+}
+
+/* ------ END NAV ------ */
+
+/* ------ CARROUSEL ------ */
+.container_carrousel{
+	width: 100%;
+	height: 450px;
+	background: linear-gradient(rgba(69, 69, 69, 0.3), rgba(69, 69, 69, 0.3)), url('https://images.pexels.com/photos/8241135/pexels-photo-8241135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+}
+
+/* ------ END CARROUSEL ------ */
+
+/* ------ FEATURED ------ */
+.container_featured{
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_h1featured h1{
+	font-size: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #88736f;
+}
+.container_h1featured i{
+	margin: 0 20px;
+}
+
+
+
+.container_blocks{
+	width: 100%;
+	margin: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_outblock{
+	width: 330px;
+	height: 420px;
+	border: 1px solid rgba(181, 134, 151, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 30px;
+	transition: all 300ms;
+}
+.container_outblock:hover{
+	border: 1px solid rgba(181, 134, 151, 1.0);
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container_box{
+	width: 310px;
+	height: 400px;
+	background: #f2ecea;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container_img{
+	width: 280px;
+	height: 200px;
+	margin: 10px;
+}
+.container_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container_box .container_info{
+	width: 80%;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.container_box .container_info p{
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	color: #73736f;
+	margin: 5px;
+	text-align: center;
+}
+.container_box .container_info hr{
+	width: 100%;
+	background: #fff;
+	border: none;
+	height: 2px;
+	margin: 10px 0;
+}
+.container_box .container_info h2{
+	font-size: 12px;
+	line-height: 26px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	color: #c5b8a8;
+}
+.container_box .container_info h2:hover{
+	text-decoration: underline;
+}
+
+/* ------ END FEATURED ------ */
